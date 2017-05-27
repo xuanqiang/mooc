@@ -78,7 +78,8 @@ Vagrant使用教程
             `Server version: Apache/2.4.7 (Ubuntu)
              Server built:   Jul 15 2016 15:34:04`
         * 测试访问，此时不能访问，因为80端口被nginx占用了,可以先把nginx停掉
-            * curl -I 'http://127.0.0.1'
+        # sudo /etc/init.d/nginx stop
+            * curl -I 'http://127.0.0.1'
             ``` 
             
                  HTTP/1.1 200 OK
